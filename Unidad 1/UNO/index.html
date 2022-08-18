@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Uno</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/Diccionario.js"></script>
+	<script type="text/javascript" src="js/Util.js"></script>
+</head>
+<body>
+
+	<!--Se crea el menu principal, en donde nos pide ingresar el numero de jugadores y un boton para iniciar la partida-->
+	<section class="content-inicio" id="content-inicio">
+		<div class="content-menu">
+			<input type="text" class="caja" id="caja-nombre" placeholder="Jugadores">
+			<button class="btn" id="btn-jugar">PUCHALE AL PLAY</button>
+		</div>
+	</section>
+
+	<!--Se manda a llamar el identificador del tablero y se manda a llamar la clase para el numero de cartas, 
+		y se mandan a llamar los identificadores, este proceso crea el tablero"-->
+	<template id="template-tablero">
+		<div id="tablero">
+			<div class="num_cartas" id="num_cartas"></div>
+			<div id="cartas"></div>
+		</div>
+	</template>
+
+	<!--Se manda a llamar el identificador para hacer las cartas y se manda a llamar las clases con un identificador "carta", 
+		dentro de esa clase se mandan a llamar otras 3,la clase "num1", la clase "num2", clase "num3" y la clase centro-->
+	<template id="template-carta">
+		<div class="carta" id="carta">
+			<div class="num1" id="num1"></div>
+			<div class="centro" id="centro">
+				<div class="num3" id="num3"></div>
+			</div>
+			<div class="num2" id="num2"></div>
+		</div>
+	</template>
+
+	<!--Se manda a llamar una clase con identificador "content-juego", dentro de el se mandan a llamar los identificadores 
+		"content-monto", "content-jugada" y se llama una clase con el identificador "content-turno"-->
+	<section class="content-juego" id="content-juego">
+		<div id="content-monto"></div>
+		<div id="content-jugada"></div>
+		<div class="content-turno" id="content-turno"></div>
+	</section>
+
+	<!--Se usa el tipo de entrada "text" para hacer una caja para introducir el texto en los arvhivos "socket.io" y "App" de javascript-->
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="js/App.js"></script>
+
+</body>
+</html>

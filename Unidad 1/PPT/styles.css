@@ -1,0 +1,67 @@
+body{
+    /*se le da un color al fondo*/
+    background: rgb(220,169,255);
+    background: linear-gradient(90deg, rgba(220,169,255,1) 0%, rgba(184,255,254,1) 50%, rgba(255,182,255,1) 100%);
+}
+/*Se crea un margen y de igual manera se utiliza un padding para rellenar especios,
+se utiliza un box-sizing para crear un bordo y un font-famili para cambiar el tipo de letra*/
+*{
+    margin: 0;
+    padding: 8;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*se centra el texto y se le da un espacio de 0 px*/
+footer{
+    text-align: center;
+    padding: 0px;
+}
+/*se agrega color tranparente y un borde negro de 4px con margen de 5px*/
+button{
+    background-color: transparent;
+    border: 4px solid black;
+    margin: 5px;
+}
+/*se le da un degradado en forma de circulo en blanco y negro, y de igual manera se genera un margen
+automatico agregandole un color negro al mismo de 5px, de igual manera se le dio un espacio de tipo 'between'para mas estetica*/
+.container {
+    max-width: 600px;
+    height: 20000vh;
+    max-height: 845px;
+    margin: 0 auto;
+    background: rgb(111,117,144);
+    background: radial-gradient(circle, rgba(111,117,144,1) 0%, rgba(255,255,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px solid black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+/*se le da diseño al titulo de 35px de tamaño centrado con un espacio de 20px, */
+h1{
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+/*se centran las imagenes y el texto*/
+#resultado{
+    text-align: center;
+}
+/*se le da un ancho a las imagenes*/
+#resultado img{
+    width: 25%;
+}
+/*al texto de inicio de juego se le da un tamaño de 26px y un espacio de 20px */
+#start-text{
+    font-size: 26px;
+    padding: 20px;
+}
+/*se le da un tipo de visualizacion flex y un ancho de 100%*/
+#group-btn{
+    display: flex;
+    width: 100%;
+}
+/*A cada imagen se le da un ancho de 100%*/
+#group-btn > button > img{
+    width: 100%;
+}
